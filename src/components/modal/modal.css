@@ -1,0 +1,88 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 10;
+  transition: 0.4s ease;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__container {
+  position: relative;
+  width: 400px;
+  min-height: 100px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.modal__container h1 {
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.modal__container input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  width: 300px;
+  font-size: 20px;
+}
+
+.modal__container .submit {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  transition: 0.4s ease;
+}
+
+.modal__container .submit:hover {
+  transform: translateY(-10px);
+}
+
+.modal__container .exit {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  transition: 0.4s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.modal__container-date_input {
+  margin-top: 20px;
+}
+
+.modal__container-date_input .para {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.modal .modal__container .modal__container-date_input .date_input {
+  margin-bottom: 10px;
+}
